@@ -1,0 +1,219 @@
+.materiales-page .navbar {
+    background-color: #D24D58;
+  }
+    
+  .materiales-page .navbar a {
+    color: #D1E6E7;
+  }
+  
+  .materiales-page {
+    animation: slide-down 1s;
+    background-color: #D24D58;
+    overflow: hidden;
+  }
+      
+  .materiales-page-container {  
+    max-width: 1200px;
+    min-height: calc(100vh - 50px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .rectangle {
+    width: 300px;
+    height: auto;
+    background-color: #978DCF;
+    margin: 0 20px;
+    border-radius: 50px;
+    display: inline-block; 
+    position: relative;
+    vertical-align: middle;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+    .materiales-rectangulos {
+        margin-top: 150px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .rectangle .image {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        max-width: 150px;
+        max-height: 150px;
+      }
+
+
+
+
+.rectangle h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  color: #FFF9F9;
+  font-size: 23px;
+}
+
+.rectangle p {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFF9F9;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.rectangle h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFF9F9;
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+
+.btn-r {
+    background-color: #353146;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px; 
+    border-radius: 50px;
+    cursor: pointer;
+    width: 155px;
+    position: absolute;
+    right: 75px;
+    top: 390px;
+}
+
+.btn-r a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-r a:hover {
+    color: #D24D58;
+}
+
+@keyframes giro{
+    0%{
+        opacity: 0;
+        -webkit-transform:rotate(-180deg);
+    }
+    from{
+        background-color: cornflowerblue;
+    }
+
+}
+.btn-r:hover{
+    transform-origin: center;
+    animation:.5s giro 1;
+}
+
+.new-btn {
+  background-color: #353146;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px; 
+  border-radius: 50px;
+  cursor: pointer;
+  width: 155px;
+  position: absolute;
+  right: 75px;
+  margin-top: -20px;
+}
+.new-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.new-btn a:hover {
+    color: #D24D58;
+}
+
+@keyframes giro{
+    0%{
+        opacity: 0;
+        -webkit-transform:rotate(-180deg);
+    }
+    from{
+        background-color: cornflowerblue;
+    }
+
+}
+.new-btn:hover{
+    transform-origin: center;
+    animation:.5s giro 1;
+}
+
+.Donaciones1 p {
+  margin-top: 120px;
+}
+
+.new-rectangle {
+  margin-top: 60px;
+}
+
+.new-rectangle img {
+  position: relative;
+  width: 300px;
+  height: 1100px;
+  opacity: 70%;
+}
+
+.new-rectangle2 {
+  margin-top: 60px;
+}
+
+.new-rectangle2 img {
+  position: relative;
+  width: 300px;
+  height: 744px;
+  opacity: 70%;
+}
+
+@media (max-width: 786px) {
+  .materiales-rectangulos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rectangle {
+    margin: 20px auto;
+  }
+  .new-rectangle {
+    display: none;
+  }
+
+  .new-rectangle2 {
+    display: none;
+  }
+  .rectangulos-container {
+    margin-bottom: 150px;
+
+  }
+
+  .rectangulos-container3 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  
+  .materiales-page .navbar {
+    z-index: 4;
+  }
+  .materiales-page .navbar a {
+    color: #FFFFFF;
+  }
+
+  .materiales-page .navbar-toggle span {
+    background-color: #ffffff;
+  }
+}
+
+
+
+

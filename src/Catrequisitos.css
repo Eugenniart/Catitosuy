@@ -1,0 +1,164 @@
+/* Navbar */
+
+.catrequisitos-page .navbar {
+  background-color: #D4CFCF;
+  position: relative;
+}
+
+.catrequisitos-page .navbar a {
+  color: #5C45D2;
+}
+
+/* Página */
+
+.catrequisitos-page {
+  background-color: #D4CFCF;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.catrequisitos-container {
+  background-color: #D4CFCF;
+  max-width: 800px;
+  margin: 0 auto;
+  height: calc(100vh - -800px);
+  overflow: hidden;
+  
+}
+
+/* Requisitos */
+
+.requisito {
+  display: flex;
+  align-items: center;
+}
+
+.requisito h1 {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 100px;
+  color: #5C45D2;
+}
+
+.requisito p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  margin: 0;
+  z-index: 3;
+}
+
+.catrequisitos-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 100px;
+}
+
+.requisito:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* circulo */
+
+.circulo {
+  position: absolute;
+  top: 150px;
+  left: -350px;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #978DCF;
+  opacity: 21%;
+  z-index: 1;
+}
+
+.circulo3 {
+  position: absolute;
+  top: 940px;
+  left: 840px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #978DCF;
+  opacity: 21%;
+  z-index: 3;
+}
+
+
+/* Gif y rectangulo */
+
+.ratoncito {
+  position: relative;
+  bottom: 350px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  left: 130px;
+  
+}
+
+
+/* media queries */ 
+
+@media screen and (max-width: 768px) {
+  .catrequisitos-container{
+    height: calc(100vh - -500px);
+  }
+
+
+  .ratonicito {
+    position: relative;
+    bottom: 0;
+    right: 100px;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .ratonicito img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #header-06 {
+    z-index: 3;
+  }
+
+  .circulo,
+  .circulo3,
+  .circulo4 {
+    display: none;
+  }
+
+  .catrequisitos-page .navbar {
+    z-index: 4;
+  }
+  .catrequisitos-page .navbar a {
+    color: #FFFFFF;
+  }
+
+  .catrequisitos-page .navbar-toggle span {
+    background-color: #5C45D2;
+  }
+}
+
+
+@media screen and (max-width: 1160px) {
+  .circulo3{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .catrequisitos-container {
+    position: relative;
+  }
+
+}

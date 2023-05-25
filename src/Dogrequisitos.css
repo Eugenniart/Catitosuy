@@ -1,0 +1,194 @@
+/* Navbar */
+
+.dogrequisitos-page .navbar {
+ background-color: #FFF9F9;
+ position: relative;
+}
+    
+.dogrequisitos-page .navbar a {
+ color: #5C45D2;
+}
+
+/* Página */
+.dogrequisitos-page {
+  background-color: #FFF9F9;
+}
+
+.body {
+ overflow-x: hidden;
+}
+    
+.dogrequisitos-container {  
+  background-color: #FFF9F9;
+  max-width: 800px;
+  margin: 0 auto;
+  height: calc(100vh - -1155px);
+  overflow: hidden;
+}
+
+/* Requisitos */
+    
+.requisito2 {
+  display: flex;
+  align-items: center;
+}
+    
+.requisito2 h1 {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 100px;
+  color: #31909A;
+  z-index: 1;
+}
+    
+.requisito2 p {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  margin: 0;
+  z-index: 3;
+}
+    
+.dogrequisitos-txt {
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ margin-top: 100px;
+}
+    
+.requisito2:nth-child(even) {
+ align-self: flex-end;
+ text-align: right;
+}
+
+/* Circulos */
+    
+.circulo5 {
+  position: absolute;
+  top: 150px;
+  left: -350px;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #B0D4D5;
+  opacity: 50%;
+  z-index: 1;
+}
+    
+.circulo6 {
+  position: absolute;
+  top: 0px;
+  left: 1200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #B0D4D5;
+  opacity: 50%;
+  z-index: 1;
+}
+    
+.circulo7 {
+  position: absolute;
+  top: 940px;
+  left: 840px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #B0D4D5;
+  opacity: 50%;
+  z-index: 1;
+}
+
+    
+
+/* Gif y rectangulo */   
+    
+
+  
+.hormiga {
+      position: relative;
+      bottom: 350px;  
+      left: 100px;
+      margin-top: 300px;
+}
+
+
+
+    
+
+   
+/* media queries */ 
+
+@media screen and (max-width: 768px) {
+  .dogrequisitos-container{
+    height: calc(100vh - -700px);
+  }
+
+
+  
+  .hormiga {
+    position: relative;
+    bottom: 450px;
+    left: 10px;
+    margin-top: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .hormiga img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #header6 {
+    z-index: 3;
+  }
+
+  #header7 {
+    z-index: 3;
+  }
+
+  .circulo5,
+  .circulo6,
+  .circulo7,
+  .circulo8,
+  .circulo9 {
+    display: none;
+  }
+
+  .dogreq{
+    display: none;
+  }
+
+  .dogrequisitos-page .navbar {
+    z-index: 4;
+  }
+  .dogrequisitos-page .navbar a {
+    color: #FFFFFF;
+  }
+
+  .dogrequisitos-page .navbar-toggle span {
+    background-color: #5C45D2;
+  }
+}
+
+
+@media screen and (max-width: 1160px) {
+  .circulo6,
+  .circulo7,
+  .circulo8{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .dogrequisitos-container {
+    position: relative;
+  }
+}
+
+    

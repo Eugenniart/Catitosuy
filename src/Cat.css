@@ -1,0 +1,132 @@
+.cat-page .navbar {
+    background-color: white;
+  }
+  
+  .cat-page .navbar a {
+    color: #705ECE;
+  }
+
+  .cat-page {
+    animation: slide-down 1s;
+    
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+  .cat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* cambio aquí */
+    background-color: #FFFFFF;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  }
+  
+  
+  .cat-content h1 {
+    text-align: start;
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  .cat-content h3 {
+    text-align: left;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .cat-content img {
+    margin-top: 30px;
+    width: 85%;
+    position: relative;
+    right: 0px;
+  }
+  
+
+  
+  .cat-page-container {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .cat-content {
+    max-width: 50%;
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+  .cat-gif-container {
+    max-width: 50%;
+  }
+  
+  .gif {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .cat-page-container {
+      flex-direction: column-reverse; /* cambio aquí */
+    }
+  
+    .cat-content {
+      max-width: 100%;
+      margin-right: 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px; /* cambio aquí */
+      margin-top: -159px;
+    }
+  
+    .cat-gif-container {
+      max-width: 100%;
+      margin-top: 150px; /* cambio aquí */
+      margin-bottom: 100px;
+      z-index: 2;
+    }
+
+    .cat-content h1 {
+      text-align: center;
+    }
+
+    .cat-content h3 {
+      text-align: center;
+    }
+
+    .cat-page .navbar {
+      z-index: 4;
+    }
+    .cat-page .navbar a {
+      color: #FFFFFF;
+    }
+
+    .cat-page .navbar-toggle span {
+      background-color: #705ECE;
+    }
+    
+    
+
+  }
+  
+  
+  

@@ -1,0 +1,240 @@
+.economica-page .navbar {
+    background-color: #FEB2A4;
+  }
+    
+  .economica-page .navbar a {
+    color: #353146;
+  }
+  
+  .economica-page {
+    animation: slide-down 1s;
+    background-color: #FEB2A4;
+    overflow: hidden;
+  }
+      
+  .economica-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 10px);
+  }
+  
+  
+  .rectangulos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 150px;
+  }
+
+  .rectangulos2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 160px;
+
+  }
+
+
+  
+  .rectangulo6 {
+    width: 950px;
+    height: 190px;
+    background-color: #D4CFCF;
+    z-index: 3;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .rectangulo6 h3 {
+    color: #31909A;
+    font-weight: 400;
+    font-size: 25px;
+  }
+  
+  .rectangulo6 h2 {
+    color: #31909A;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  
+  .rectangulo6:not(:last-child) {
+    margin-right: 80px;
+  }
+  
+  .logoeconomico-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  
+  .logoeconomico {
+    position: absolute;
+    bottom: 140px;
+    left: 60px;
+    width: 55%;
+    height: 70%;
+  }
+
+  .logoeconomico-container2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  
+  .logoeconomico2 {
+    position: absolute;
+    bottom: 160px;
+    left: 130px;
+    width: 35%;
+    height: 70%;
+  }
+  
+    
+  .rectangulo7 {
+    width: 380px;
+    height: 190px;
+    background-color: #D4CFCF;
+    z-index: 3;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .rectangulo7 h3 {
+    color: #31909A;
+    font-weight: 400;
+    font-size: 25px;
+  }
+  
+  .rectangulo7 h2 {
+    color: #31909A;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .rectangulo7:not(:last-child) {
+    margin-left: 30px;
+  }
+
+  .btn-m {
+  background-color: #7AB7BF;
+  font-size: 25px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 155px;
+  bottom: -30px;
+  position: absolute;
+
+  }
+
+  .btn-m a {
+    color: white;
+    text-decoration: none;
+
+  }
+
+  
+  .button-container {
+    position: relative;
+    left: -80px;
+    bottom: -35px;
+  }
+  
+  .btn-m:hover{
+    animation:1.1s balanceo 1;
+}
+@keyframes balanceo{
+    20%{
+        -webkit-transform: scale(0.7) rotate(-6deg);
+    }
+    30%, 70%{
+        -webkit-transform: scale(1.1) rotate(6deg);
+    }
+    50%, 90%{
+        -webkit-transform: scale(1.1) rotate(-6deg);
+    }
+}  
+
+@media (max-width: 768px) {
+  .rectangulos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+  }
+  
+  .rectangulos2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    width: 100%;
+  }
+  
+  .rectangulo6, .rectangulo7 {
+    width: 80%;
+    margin-bottom: 50px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .itau {
+    margin-top: 50px;
+  }
+
+  .paypal {
+    margin-top: 50px;
+  }
+  
+  .logoeconomico {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 50%;
+  }
+
+  .logoeconomico2 {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 60%;
+  }
+
+  .mensual {
+    margin-top: 120px;
+  }
+  .economica-page .navbar {
+    z-index: 4;
+  }
+  .economica-page .navbar a {
+    color: #FFFFFF;
+  }
+
+  .economica-page .navbar-toggle span {
+    background-color: #ffffff;
+  }
+  
+}

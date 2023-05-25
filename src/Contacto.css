@@ -1,0 +1,157 @@
+.contacto-page .navbar {
+  background-color: #353146;
+}
+
+.contacto-page .navbar a {
+  color: #D4CFCF;
+}
+
+.contacto-container {
+  background-color: #353146;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: calc(100vh - 60px);
+  text-align: center;
+
+  
+}
+
+.contacto-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+  margin-top: 50px;
+}
+
+.gif-container9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  text-align: center; /* Agrega esta línea */
+}
+
+.gif {
+  max-width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 160px;
+
+}
+
+.button {
+  background-color: #353146;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  top: -50px;
+}
+
+.button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  color: #353146;
+}
+
+.btninsta {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  background: linear-gradient(to right, #833AB4, #FD1D1D, #FCAF45);
+  padding: 10px 20px;
+  width: 238px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.btninsta:hover {
+  color: #353146;
+  animation:1s chicle 1;
+}
+
+@keyframes chicle{
+  30%{
+      -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+  40%{
+      -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+  60%{
+      -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+.btnfacebook {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  background: linear-gradient(to right, #3b5998, #1877f2);
+  padding: 10px 20px;
+  width: 238px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.btnfacebook:hover {
+  color: #353146;
+  animation:1s chicle 1;
+}
+
+@keyframes chicle{
+  30%{
+      -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+  40%{
+      -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+  60%{
+      -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+@media (max-width: 786px) {
+  .contacto-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .giftop{
+    margin-top: 50px;
+  }
+  
+  .gifbot {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .contacto-page .navbar {
+    z-index: 4;
+  }
+  .contacto-page .navbar a {
+    color: #FFFFFF;
+  }
+
+  .contacto-page .navbar-toggle span {
+    background-color: #ffffff;
+  }
+}

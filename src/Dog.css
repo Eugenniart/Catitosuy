@@ -1,0 +1,137 @@
+.dog-page .navbar {
+    background-color: #353146;
+  }
+  
+  .dog-page .navbar a {
+    color: #978DCF;
+  }
+
+  .dog-page {
+    animation: slide-down 1s;
+    
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+  .dog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* cambio aquí */
+    background-color: #353146;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  }
+
+  
+  
+  .dog-content h1 {
+    text-align: end;
+    font-size: 45px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+
+  .dog-content h3 {
+    text-align: right;
+    left: 45px;
+    position: relative;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .dog-content img {
+    margin-top: 30px;
+    width: 85%;
+    position: relative;
+   left: 45px;
+  }
+
+  .dog-page-container {
+    background-color: #353146;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .dog-content {
+    max-width: 50%;
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  
+  .dog-gif-container {
+    max-width: 50%;
+  }
+  
+  .gifdog {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dog-page-container {
+      flex-direction: column;
+    }
+    .dog-content {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px; /* cambio aquí */
+      margin-top: -159px;
+      max-width: 100%;
+      margin-right: 0;
+      bottom: 0;
+    }
+    .dog-gif-container {
+      max-width: 100%;
+      margin-top: 150px; /* cambio aquí */
+      margin-bottom: 100px;
+      z-index: 2;
+    }
+
+    .dog-content h1 {
+      text-align: center;
+    }
+
+    .dog-content h3 {
+      text-align: center;
+      margin-right: 80px;
+    }
+
+    .dog-page .navbar {
+      z-index: 4;
+    }
+    .dog-content img {
+      margin-right: 80px;
+    
+    };
+
+    .dog-page .navbar {
+      z-index: 4;
+    }
+    .dog-page .navbar a {
+      color: #FFFFFF;
+    }
+
+    .dog-page .navbar-toggle span {
+      background-color: #ffffff;
+    }
+  }
+  
